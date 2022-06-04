@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.attribution {
+    margin-top: 50px;
+    color: white;
+    font-size: 14px;
+}
+
+.cards {
+    max-width: 1160px;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 30px;
+}
+
+.card {
+    background-color: var(--Violet-social);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.inner-card {
+    border-radius: 15px 15px 0px 0px;
+    margin-top: auto;
+    height: 80%;
+    background-color: var(--Dark-blue);
+    padding: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.inner-card:hover {
+    opacity: 0.9;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+h1.hours {
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.inner-card P {
+    color: var(--Pale-Blue);
+    font-size:16px;
+}
+
+
+
+.profile {
+    margin-bottom: auto;
+    background-color: var(--Blue);
+    height: 70%;
+    border-radius: 15px;
+    padding: 35px;
+}
+
+.profile-pic {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+    margin-bottom: 45px;
+    /* background-image: url("./images/image-jeremy.png"); */
+}
+
+.profile p {
+    color: var(--Pale-Blue);
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.profile h1 {
+    font-weight: 300;
+    font-size: 38px;
+    color: white;
+}
+
+.profile-pic img {
+    width: 100%;
+}
+
+.profile-card {
+    grid-row: span 2;
+    background-color: var(--Dark-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    height: 30%;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+.time a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--Pale-Blue);
+    font-size: 20px;
+}
+
+.time a:hover {
+    color: white;
+}
+
+.time a:active {
+    color: white;
+}
+
+.work {
+    background-color: var(--Light-red-work);
+    background-image: url("./images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.play {
+    background-color: var(--Soft-blue-play);
+    background-image: url("./images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.exercise {
+    background-color: var(--Lime-green-exercise);
+    background-image: url("./images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.social {
+    background-color: var(--Violet-social);
+    background-image: url("./images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.self {
+    background-color: var(--Soft-orange-self-care);
+    background-image: url("./images/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.study {
+    background-color: var(--Light-red-study);
+    background-image: url("./images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
