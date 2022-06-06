@@ -38,10 +38,12 @@ body {
 }
 
 .cards {
-    max-width: 1160px;
+    width: 1200px;
     display: grid;
     grid-template-columns: repeat(4, 270px);
-    grid-template-rows: repeat(2, 250px);
+    /* grid-template-rows: repeat(2, 250px); */
+    justify-content: center;
+    grid-auto-rows: 250px;
     grid-gap: 30px;
 }
 
@@ -190,4 +192,28 @@ h1.hours {
     background-image: url("./images/icon-study.svg");
     background-repeat: no-repeat;
     background-position: top right;
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 270px);
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        height: 1200px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 270px);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        height: 2400px;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 270px);
+    }
 }
