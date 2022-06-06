@@ -3,7 +3,7 @@ const Weekly = document.getElementById("weekly");
 const Monthy = document.getElementById("monthly");
 
 const playCurrent = document.getElementById("play-current");
-const workCurrent = document.getElementById("play-current");
+const workCurrent = document.getElementById("work-current");
 const playPrevious = document.getElementById("play-previous");
 const workPrevious = document.getElementById("work-previous");
 const studyCurrent = document.getElementById("study-current");
